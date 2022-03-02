@@ -1,0 +1,71 @@
+/* Style the HTML elements according to the following instructions. 
+DO NOT ALTER THE EXISTING HTML TO DO THIS.  WRITE ONLY CSS!*/
+/* Give the <body> element a background of #bdc3c7*/
+body{
+  background-color:#bdc3c7;
+}
+
+/* Make the <h1> element #9b59b6*/
+h1{
+color: #9b59b6;
+}
+
+/* Make all <h2> elements orange */
+h2{
+  color:orange;
+}
+
+/* Make all <li> elements blue(pick your own hexadecimal blue)*/ 
+li{
+  color:#4169E1;
+}
+/*Change the background on every paragraph to be yellow*/
+p{
+  background-color:yellow;
+}
+
+/*Make all inputs have a 3px red border*/
+input{
+  border-width:3px;
+  border-color:red;
+}
+
+/* Give everything with the class 'hello' a white background*/
+.hello{
+  background-color:white;
+}
+
+/* Give the element with id 'special' a 2px solid blue border(pick your own rgb blue)*/
+#special{
+  border-style:solid;
+  border-width:2px;
+  border-color:#4169E1;
+}
+
+/*Make all the <p>'s that are nested inside of divs 25px font(font-size: 25px)*/
+div p {
+  font-size: 25px;
+}
+
+/*Make only inputs with type 'text' have a gray background*/
+input[type=text]{
+  background-color:grey;
+}
+
+/* Give both <p>'s inside the 3rd <div> a pink background*/
+li ~ p{
+  background-color:pink;
+}
+
+/* Give the 2nd <p> inside the 3rd <div> a 5px white border*/
+p ~ p {
+  border-style:solid;
+  border-width:5px;
+  border-color:white;
+}
+
+/* Make the <em> in the 3rd <div> element white and 20px font(font-size:20px)*/
+em{
+  font-size:20px;
+  color:white;
+}

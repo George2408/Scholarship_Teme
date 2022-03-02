@@ -1,0 +1,23 @@
+body {
+  background-color: #ffb6c2e1;
+  margin-left: 45px;
+}
+
+label {
+  font-family: Arial;
+  color: black;
+}
+h2 {
+  font-family: Arial;
+  color: rgb(15, 106, 241);
+}
+.class1 {
+  background-color:#ffb6c2e1;
+}
+.class2 {
+  font-family: Arial;
+  border-radius: 5px;
+  margin-right: 40px;
+  padding: 8px;
+  background-color: rgb(15, 106, 241);
+}
