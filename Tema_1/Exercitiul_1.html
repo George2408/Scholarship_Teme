@@ -3,34 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <title>Pagina</title>
-    <link rel="stylesheet" href="Ex_1.css">
+    <link rel="stylesheet" href="Ex_1.css" />
   </head>
   <body>
-
     <h2>My first page</h2>
 
     <form>
       <label for="fname">First Name:</label> <br />
-      <input type="text" id="fname" class="class1"/> <br />
+      <input type="text" id="fname" class="class1" /> <br />
       <br />
+
       <label for="lname">Last Name:</label> <br />
-      <input type="text" id="lname" class="class1"/> <br />
+      <input type="text" id="lname" class="class1" /> <br />
       <br />
+
       <label for="age">Age:</label> <br />
-      <input type="numeric" id="age" class="class1"/> <br />
+      <input list="age" class="class1" />
+      <datalist id="age">
+        <option value="18"></option>
+        <option value="19"></option>
+        <option value="20"></option>
+        <option value="21"></option>
+        <option value="22"></option>
+        <option value="23"></option>
+        <option value="24"></option>
+        <option value="25"></option>
+        <option value="26"></option>
+        <option value="27"></option>
+        <option value="28"></option>
+        <option value="29"></option>
+        <option value="30"></option>
+        </datalist
+
+      ><br />
       <br />
-      <label for="lname">Last Name:</label> <br />
-      <input type="text" id="lname" class="class1"/> <br />
+
+      <label for="city">City:</label> <br />
+      <input list="city" class="class1" />
+      <datalist id="city">
+        <option value="Constanta"></option>
+        <option value="Brasov"></option>
+        <option value="Braila"></option>
+        <option value="Iasi"></option>
+        <option value="Bucuresti"></option>
+        <option value="Mangalia"></option></datalist
+
+      ><br />
       <br />
 
-      <label for="descr">Describe Yourself:</label> <br>
-      <textarea name="message" id="descr" cols="20" rows="10" class="class1"></textarea>
-      <br> <br>
+      <label for="descr">Describe Yourself:</label> <br />
+      <textarea
+        name="message"
+        id="descr"
+        cols="20"
+        rows="10"
+        class="class1"
+      ></textarea>
+      <br />
+      <br />
 
-    
-      <input type="submit" value="Cancel" class="class2">
-      <input type="submit" value="Submit" class="class2">
-
+      <input type="submit" value="Cancel" class="class2" />
+      <input type="submit" value="Submit" class="class2" />
     </form>
   </body>
 </html>
