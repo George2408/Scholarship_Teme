@@ -1,0 +1,37 @@
+<body>
+  <h1 [style.background-color]="titleColor">
+    The cureent color of the title is: {{ titleColor }}
+  </h1>
+
+  <div>
+    <label for="instant">
+      Introduceti aici culoarea pentru modificare in timp real:
+    </label>
+    <input id="instant" type="text" [(ngModel)]="titleColor" />
+  </div>
+
+  <div style="margin-top: 20px">
+    <label for="instant"
+      >Introduceti aici culoarea pentru modificare dupa apasarea butonului:
+    </label>
+    <input id="apasare" type="text" #apasare />
+
+    <button type="button" (click)="modificareCuloare(apasare.value)">
+      Modifica
+    </button>
+  </div>
+
+  <!-- <p [style.color] = 'titleColorString'>
+  Title is: {{title}}
+</p>
+
+<p >
+ Text is: {{noteContent}}
+</p>
+<input type="text" [(ngModel)]="noteContent"/>
+<button mat-icon-button (click)='functie()'
+> <mat-icon>add</mat-icon></button>
+<mat-form-field>
+  <input matInput placeholder="Add Note" >
+</mat-form-field> -->
+</body>
