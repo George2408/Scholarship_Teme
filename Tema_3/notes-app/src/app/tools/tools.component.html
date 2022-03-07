@@ -3,14 +3,14 @@
     The cureent color of the title is: {{ titleColor }}
   </h1>
 
-  <div>
+  <!-- <div>
     <label for="instant">
       Introduceti aici culoarea pentru modificare in timp real:
     </label>
     <input id="instant" type="text" [(ngModel)]="titleColor" />
   </div>
 
-  <div style="margin-top: 20px">
+  <div class="class1">
     <label for="instant"
       >Introduceti aici culoarea pentru modificare dupa apasarea butonului:
     </label>
@@ -19,7 +19,23 @@
     <button type="button" (click)="modificareCuloare(apasare.value)">
       Modifica
     </button>
-  </div>
+  </div> -->
+
+
+<form class="form">
+
+    <mat-form-field class="form-input" appearance="fill">
+      <mat-label> Instant color </mat-label>
+      <input [(ngModel)]="titleColor" matInput  >
+    </mat-form-field>
+
+    <mat-form-field class="form-input" appearance="fill">
+      <mat-label> Introduce a color </mat-label>
+      <input type="text" matInput #press/>
+    </mat-form-field>
+    <button mat-button (click)="colorModification(press.value)">Submit</button>
+  </form>
+
 
   <!-- <p [style.color] = 'titleColorString'>
   Title is: {{title}}

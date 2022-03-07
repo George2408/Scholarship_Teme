@@ -15,12 +15,12 @@ export class ToolsComponent implements OnInit {
   // noteContent:string="";
 
 
-  // constructor(titleColor: ) { }
+   constructor( ) { }
 
   ngOnInit(): void {
   }
 
-  modificareCuloare(instant:string){
+  colorModification(instant:string){
     this.titleColor = instant;
   }
 
