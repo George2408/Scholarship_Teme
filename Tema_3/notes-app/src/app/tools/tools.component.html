@@ -21,21 +21,18 @@
     </button>
   </div> -->
 
-
-<form class="form">
-
+  <form class="form" >
     <mat-form-field class="form-input" appearance="fill">
       <mat-label> Instant color </mat-label>
-      <input [(ngModel)]="titleColor" matInput  >
+      <input name="titleColor" [(ngModel)]="titleColor" matInput />
     </mat-form-field>
 
     <mat-form-field class="form-input" appearance="fill">
       <mat-label> Introduce a color </mat-label>
-      <input type="text" matInput #press/>
+      <input type="text" matInput #press />
     </mat-form-field>
     <button mat-button (click)="colorModification(press.value)">Submit</button>
   </form>
-
 
   <!-- <p [style.color] = 'titleColorString'>
   Title is: {{title}}
