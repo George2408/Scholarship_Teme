@@ -1,0 +1,24 @@
+<h1>Add a note</h1>
+
+<form class="form-input">
+  <label>Title</label>
+  <mat-form-field>
+    <input
+      matInput
+      name="inputNote"
+      placeholder="Title"
+      [formControl]="title"
+    />
+  </mat-form-field>
+
+  <label>Description</label>
+  <mat-form-field>
+    <textarea
+      matInput
+      name="inputNote"
+      placeholder="Description"
+      [formControl]="description"
+    ></textarea>
+  </mat-form-field>
+  <button mat-button>Add</button>
+</form>
