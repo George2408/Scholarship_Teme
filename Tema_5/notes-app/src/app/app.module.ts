@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddNoteComponent } from './add-note/add-note.component';
 import { HomeComponent } from './home/home.component';
 import { DummyComponent } from './dummy/dummy.component';
+import { NoteService } from './services/note.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { DummyComponent } from './dummy/dummy.component';
     BrowserAnimationsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [NoteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -8,6 +8,7 @@
       name="inputNote"
       placeholder="Title"
       [formControl]="title"
+      required
     />
   </mat-form-field>
 
@@ -20,5 +21,12 @@
       [formControl]="description"
     ></textarea>
   </mat-form-field>
+
+  <div *ngIf="title.invalid && (title.dirty || title.touched)" class="alert">
+    <div *ngIf="title.errors?.['required']">
+      Title is required.
+   </div>
+  </div>
+
   <button mat-button>Add</button>
 </form>
