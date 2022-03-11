@@ -9,19 +9,22 @@ export class NoteService {
 
   notes:Note[] = [
     {
-      id:1,
+      id:'1',
       title:"First note",
-      description:"This is the description for the first note"
+      description:"This is the description for the first note",
+      categoryId:'1'
     },
     {
-      id:2,
+      id:'2',
       title:"Second note",
-      description:"This is the description for the second note"
+      description:"This is the description for the second note",
+      categoryId:'2'
     },
     {
-      id:3,
+      id:'3',
       title:"Third note",
-      description:"This is the description for the third note"
+      description:"This is the description for the third note",
+      categoryId:'3'
     }
   ]
 

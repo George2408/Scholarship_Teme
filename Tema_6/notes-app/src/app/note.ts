@@ -1,7 +1,8 @@
 import { LocalizedString } from "@angular/compiler";
 
 export interface Note {
-  id:number;
+  id:string;
   title:string;
   description:string;
+  categoryId: string;
 }

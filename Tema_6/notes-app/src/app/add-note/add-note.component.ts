@@ -15,6 +15,7 @@ export class AddNoteComponent implements OnInit {
   title = new FormControl('');
   description = new FormControl('');
   categories:Category[];
+  category = new FormControl('');
 
   constructor(private _service: NoteService) { }
 
@@ -23,11 +24,12 @@ export class AddNoteComponent implements OnInit {
   }
 
   clickAdd(){
-    var note: Note;
-    note.title = this.title.value;
-    note.description = this.description.value;
-    this._service.addNote(note);
+    var note: Note = {
+      title : this.title.value,
+      description : this.description.value,
+      categoryId : this.category.value,
+      id : '0',
 
-  }
+    };
 
-}
+}}
