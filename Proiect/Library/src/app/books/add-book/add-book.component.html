@@ -1,0 +1,64 @@
+<h1>Add an author</h1>
+
+<form class="form-input">
+  <label>Title</label>
+  <mat-form-field>
+    <input
+      matInput
+      name="inputNote"
+      placeholder="Title"
+      [formControl]="title"
+      required
+    />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Author</mat-label>
+    <mat-select [formControl]="author">
+      <mat-option *ngFor="let author of authors" [value]="author.name" >
+        {{author.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <label>Date of publication</label>
+  <mat-form-field>
+    <input
+      matInput
+      name="inputNote"
+      placeholder="Title"
+      [formControl]="dateOfPublication"
+      required
+    />
+  </mat-form-field>
+
+  <label>Description</label>
+  <mat-form-field>
+    <textarea
+      matInput
+      name="inputNote"
+      placeholder="Description"
+      [formControl]="description"
+    ></textarea>
+  </mat-form-field>
+
+  <label>Image</label>
+  <mat-form-field>
+    <textarea
+      matInput
+      name="inputNote"
+      placeholder="Image"
+      [formControl]="image"
+    ></textarea>
+  </mat-form-field>
+
+
+  <div *ngIf="title.invalid && (title.dirty || title.touched)" class="alert">
+    <div *ngIf="title.errors?.['required']">
+      Name is required.
+   </div>
+  </div>
+
+  <button mat-button (click)="clickAdd()">Add</button>
+</form>
+

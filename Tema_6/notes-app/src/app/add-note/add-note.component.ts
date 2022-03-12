@@ -29,7 +29,7 @@ export class AddNoteComponent implements OnInit {
       description : this.description.value,
       categoryId : this.category.value,
       id : '0',
-
-    };
+    }
+    this._service.addNote(note);
 
 }}

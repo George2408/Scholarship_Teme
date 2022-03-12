@@ -4,6 +4,6 @@ export interface Books {
   author:string;
   title:string;
   image:MediaImage;
-  dateOfPublicatiom:Data;
+  dateOfPublication:Data;
   description:string;
 }

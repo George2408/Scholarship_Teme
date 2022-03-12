@@ -3,19 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListViewComponent } from './authors/list-view/list-view.component';
-import { SnackBarComponent } from './share-module/snack-bar/snack-bar.component';
+import { MatCardModule } from '@angular/material/card';
+import { HomeModule } from './home/home.module';
+import { AuthorsModule } from './authors/authors.module';
+import { BooksModule } from './books/books.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListViewComponent,
-    SnackBarComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCardModule,
+    HomeModule,
+    AuthorsModule,
+    BooksModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,7 +2,7 @@ import { Data } from "@angular/router";
 
 export interface Author {
   name:string;
-  image:MediaImage;
-  dateOfBirth:Data;
+  image: any ;
+  dateOfBirth: string;
   description:string;
 }
