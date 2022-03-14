@@ -1,4 +1,4 @@
-<h1>Add an author</h1>
+<!-- <h1>Add an book</h1>
 
 <form class="form-input">
   <label>Title</label>
@@ -12,10 +12,11 @@
     />
   </mat-form-field>
 
+  <br><br>
   <mat-form-field appearance="fill">
     <mat-label>Author</mat-label>
     <mat-select [formControl]="author">
-      <mat-option *ngFor="let author of authors" [value]="author.name" >
+      <mat-option *ngFor="let author of authors" [ngModel]="author.id" >
         {{author.name}}
       </mat-option>
     </mat-select>
@@ -60,5 +61,5 @@
   </div>
 
   <button mat-button (click)="clickAdd()">Add</button>
-</form>
+</form> -->
 

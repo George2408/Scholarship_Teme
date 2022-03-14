@@ -3,7 +3,7 @@ import { FormControl } from '@angular/forms';
 import { Note } from '../note';
 import { NoteService } from '../services/note.service';
 import { Category } from '../category';
-import {MatSelectModule} from '@angular/material/select';
+import { MatSelectModule } from '@angular/material/select';
 
 @Component({
   selector: 'app-add-note',
@@ -29,8 +29,8 @@ export class AddNoteComponent implements OnInit {
       description : this.description.value,
       categoryId : this.category.value,
       id : '0',
-
     };
+    this._service.addNote(note)
 
 
   }

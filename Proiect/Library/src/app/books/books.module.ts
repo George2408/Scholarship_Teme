@@ -10,13 +10,15 @@ import { AddBookComponent } from './add-book/add-book.component';
 @NgModule({
   declarations: [
     BookComponent,
-    AddBookComponent
+    AddBookComponent,
   ],
   imports: [
     CommonModule,
     ShareModuleModule
   ],
   exports: [
-    BookComponent]
+    BookComponent,
+    AddBookComponent,
+  ]
 })
 export class BooksModule { }

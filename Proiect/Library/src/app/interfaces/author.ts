@@ -5,4 +5,5 @@ export interface Author {
   image: any ;
   dateOfBirth: string;
   description:string;
+  id:string;
 }

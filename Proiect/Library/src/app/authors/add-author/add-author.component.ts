@@ -23,6 +23,7 @@ export class AddAuthorComponent implements OnInit {
 
   clickAdd(){
     var author: Author = {
+      id : '1',
       name : this.name.value,
       description : this.description.value,
       image : this.image.value,

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnChanges, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 
@@ -7,12 +7,13 @@ import { Observable } from 'rxjs';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit, OnChanges {
+export class HomeComponent implements OnInit {
 
   categoryId: string;
-  selectedSearchword = new FormControl('');
 
-  @Output() searchWord;
+  @Input() selectedSearchword:string;
+
+  @Output() searchWord:string;
 
   constructor() { }
 
@@ -23,8 +24,10 @@ export class HomeComponent implements OnInit, OnChanges {
     this.categoryId = categId;
   }
 
-  ngOnChanges(): void{
-    this.searchWord = this.selectedSearchword.value;
+  valueChanged($event): void{
+    this.searchWord = this.selectedSearchword;
   }
+
+
 
 }

@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule} from '@angular/material/toolbar';
@@ -7,7 +8,9 @@ import { MatTableModule} from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatOptionModule } from '@angular/material/core';
-
+import { MatSelectModule } from '@angular/material/select';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 import { SnackBarComponent } from './snack-bar/snack-bar.component';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
@@ -27,7 +30,11 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     MatIconModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    MatOptionModule
+    MatOptionModule,
+    MatSelectModule,
+    BrowserModule,
+    FormsModule,
+    MatInputModule
   ],
   exports: [
     SnackBarComponent,
@@ -39,7 +46,11 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     MatTableModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    MatOptionModule
+    MatOptionModule,
+    MatSelectModule,
+    BrowserModule,
+    FormsModule,
+    MatInputModule
   ]
 })
 export class ShareModuleModule { }

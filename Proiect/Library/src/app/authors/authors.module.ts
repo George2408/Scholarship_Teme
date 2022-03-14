@@ -24,6 +24,8 @@ import { AddAuthorComponent } from './add-author/add-author.component';
   exports: [
     ListViewComponent,
     DetailViewComponent,
-    AuthorComponent,]
+    AuthorComponent,
+    AddAuthorComponent
+  ]
 })
 export class AuthorsModule { }

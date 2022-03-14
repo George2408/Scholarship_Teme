@@ -13,7 +13,7 @@ export class NoteComponent implements OnInit, OnChanges {
 
 
   @Input() selectedCategoryId: string;
-  @Input() selectedSearchWord : string;
+  @Input() searchWord : string;
 
   constructor(private service: NoteService) {
 
@@ -28,8 +28,8 @@ export class NoteComponent implements OnInit, OnChanges {
     if(this.selectedCategoryId){
       this.notes = this.service.getFiltredNotes(this.selectedCategoryId)
     }
-    if(this.selectedSearchWord){
-      this.notes = this.service.getFiltredSearch(this.selectedSearchWord)
+    if(this.searchWord){
+      this.notes = this.service.getFiltredSearch(this.searchWord)
     }
   }
 

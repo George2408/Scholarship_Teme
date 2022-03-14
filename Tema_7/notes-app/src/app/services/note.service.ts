@@ -57,7 +57,7 @@ export class NoteService {
   getFiltredSearch(searchWord: string)
   {
     searchWord.toLowerCase()
-    return this.notes.filter( note => note.title.toLowerCase() === searchWord || note.description.toLocaleLowerCase() === searchWord)
+    return this.notes.filter( note => note.title.toLowerCase().includes(searchWord) || note.description.toLocaleLowerCase().includes(searchWord))
   }
 
   constructor() { }

@@ -1,16 +1,22 @@
 <div class="main-div">
-  <app-filter (emitSelectedFilter)="receiveCategory($event)" ></app-filter>
+  <app-filter (emitSelectedFilter)="receiveCategory($event)"></app-filter>
 
-  <form class="form-search" >
-    <mat-form-field  appearance="fill">
+  <div class="form-search">
+    <mat-form-field appearance="fill">
       <mat-label>Search</mat-label>
-      <input matInput [formControl] = 'selectedSearchword' >
+      <input
+        matInput
+        [(ngModel)]="selectedSearchword"
+        (input)="valueChanged($event)"
+      />
     </mat-form-field>
-    </form>
-    <!--  -->
+  </div>
 
   <div class="notes">
-    <app-note [selectedCategoryId]="categoryId" [selectedSearchWord]="searchWord"></app-note>
+    <app-note
+      [selectedCategoryId]="categoryId"
+      [searchWord]="searchWord"
+    ></app-note>
     <app-tools></app-tools>
   </div>
 </div>

@@ -1,5 +1,4 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { FormControl } from '@angular/forms';
 import { Category } from '../category';
 import { NoteService } from '../services/note.service';
 

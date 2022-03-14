@@ -7,6 +7,7 @@ import { MatCardModule } from '@angular/material/card';
 import { HomeModule } from './home/home.module';
 import { AuthorsModule } from './authors/authors.module';
 import { BooksModule } from './books/books.module';
+import { ShareModuleModule } from './share-module/share-module.module';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { BooksModule } from './books/books.module';
     MatCardModule,
     HomeModule,
     AuthorsModule,
-    BooksModule
+    BooksModule,
+    ShareModuleModule
 
   ],
   providers: [],
