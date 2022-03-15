@@ -12,8 +12,8 @@ import { HomePageComponent } from './home-page/home-page.component';
   ],
   imports: [
     CommonModule,
-    MatCardModule,
-    ShareModuleModule
+    ShareModuleModule,
+    MatCardModule
   ],
   exports:[
     HomePageComponent

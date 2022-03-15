@@ -2,19 +2,21 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
-import { MatToolbarModule} from '@angular/material/toolbar';
-import { MatIconModule} from '@angular/material/icon';
-import { MatTableModule} from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { ReactiveFormsModule } from '@angular/forms';
+import { MatIconModule} from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
+import { MatToolbarModule} from '@angular/material/toolbar';
+import { MatTableModule} from '@angular/material/table';
+import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
-import { MatInputModule } from '@angular/material/input';
+import { AppRoutingModule } from '../app-routing.module';
 
 import { SnackBarComponent } from './snack-bar/snack-bar.component';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     MatSelectModule,
     BrowserModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   exports: [
     SnackBarComponent,
@@ -50,7 +54,9 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     MatSelectModule,
     BrowserModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    AppRoutingModule,
+    BrowserAnimationsModule
   ]
 })
 export class ShareModuleModule { }

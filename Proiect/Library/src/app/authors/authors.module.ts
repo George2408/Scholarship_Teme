@@ -19,7 +19,7 @@ import { AddAuthorComponent } from './add-author/add-author.component';
   ],
   imports: [
     CommonModule,
-    ShareModuleModule
+    ShareModuleModule,
   ],
   exports: [
     ListViewComponent,
