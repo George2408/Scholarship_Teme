@@ -1,0 +1,27 @@
+<div class="main-container">
+  <div class="child">
+    <h1>Modificate a note</h1>
+
+    <form class="form-input">
+      <mat-label>Title</mat-label>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <input matInput [formControl]="title" />
+      </mat-form-field>
+
+      <label>Description</label>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <textarea matInput [formControl]="description"></textarea>
+      </mat-form-field>
+
+      <mat-label>Category</mat-label>
+      <mat-form-field appearance="fill">
+        <mat-select [formControl]="categId">
+          <mat-option *ngFor="let categId of categories" [value]="categId.id">
+            {{ categId.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-button (click)="clickAdd()" >Add</button>
+    </form>
+  </div>
+</div>

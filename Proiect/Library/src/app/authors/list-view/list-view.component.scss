@@ -3,10 +3,31 @@
 }
 
 .listViewContainer{
-  margin-top: 15em;
+  margin-top: 3em;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex:1 1 auto;
   height:35px;
 }
+.table{
+  width:60em;
+}
+ .imageSize{
+  height: 200px;
+  width: 210px;
+  margin-left:-10px;
+  display: flex;
+  justify-content: center;
+
+}
+img{
+  max-width: 100%;
+ max-height: 100%;
+}
+ .imageDiv{
+   width:200px
+
+ }
+
+

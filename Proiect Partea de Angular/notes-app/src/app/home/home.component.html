@@ -1,0 +1,22 @@
+<div class="main-div">
+  <app-filter (emitSelectedFilter)="receiveCategory($event)"></app-filter>
+
+  <div class="form-search">
+    <mat-form-field appearance="fill">
+      <mat-label>Search</mat-label>
+      <input
+        matInput
+        [(ngModel)]="selectedSearchword"
+        (input)="valueChanged($event)"
+      />
+    </mat-form-field>
+  </div>
+
+  <div class="notes">
+    <app-note
+      [selectedCategoryId]="categoryId"
+      [searchWord]="searchWord"
+    ></app-note>
+    <app-tools></app-tools>
+  </div>
+</div>

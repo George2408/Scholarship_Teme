@@ -1,3 +1,4 @@
+import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Author } from 'src/app/interfaces/author';
 import { DataService } from 'src/app/services/data.service';
@@ -15,6 +16,7 @@ export class ListViewComponent implements OnInit {
   constructor(private _service: DataService) {}
 
   ngOnInit(): void {
+
     this.Authors = this._service.getAuthorsData();
   }
 }
