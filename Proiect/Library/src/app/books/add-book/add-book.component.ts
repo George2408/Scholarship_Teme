@@ -14,7 +14,7 @@ export class AddBookComponent implements OnInit {
   author = new FormControl('');
   title = new FormControl('');
   image = new FormControl('');
-  dateOfPublication = new FormControl('');
+  dateOfPublication = new FormControl(new Date());
   description = new FormControl('');
 
   authors: Author[];
@@ -32,7 +32,7 @@ export class AddBookComponent implements OnInit {
       title : this.title.value,
       description : this.description.value,
       dateOfPublication: this.dateOfPublication.value,
-      image: this.image.value,
+      image: '/assets/Books/romeoAndJuliet.jpg',
     };
     this._service.addBook(book);
 

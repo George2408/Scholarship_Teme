@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 import { Author } from 'src/app/interfaces/author';
 import { DataService } from 'src/app/services/data.service';
 
@@ -12,8 +12,7 @@ export class AddAuthorComponent implements OnInit {
 
   name = new FormControl('');
   description = new FormControl('');
-  image = new FormControl('');
-  dateOfBirth = new FormControl('');
+  dateOfBirth = new FormControl(new Date());
 
   constructor(private _service: DataService) { }
 
@@ -26,7 +25,7 @@ export class AddAuthorComponent implements OnInit {
       id : '1',
       name : this.name.value,
       description : this.description.value,
-      image : this.image.value,
+      image : "/assets/Authors/Sven.jpg",
       dateOfBirth: this.dateOfBirth.value,
     };
     this._service.addAuthor(author);

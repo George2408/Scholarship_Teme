@@ -18,12 +18,14 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DetailViewComponent } from './detail-view/detail-view.component';
 
 @NgModule({
   declarations: [
     SnackBarComponent,
     ConfirmationDialogComponent,
     NavBarComponent,
+    DetailViewComponent
 
   ],
   imports: [
