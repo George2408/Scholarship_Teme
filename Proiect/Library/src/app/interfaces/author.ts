@@ -1,9 +1,9 @@
-import { Data } from "@angular/router";
+import { Data } from '@angular/router';
 
 export interface Author {
-  name:string;
-  image: string ;
+  id: string;
+  name: string;
+  image: string;
   dateOfBirth: Date;
-  description:string;
-  id:string;
+  description: string;
 }

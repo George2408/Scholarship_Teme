@@ -27,6 +27,7 @@ export class AddBookComponent implements OnInit {
 
   clickAdd(){
     var book: Books = {
+      id:'1',
       author : this.author.value,
       title : this.title.value,
       description : this.description.value,

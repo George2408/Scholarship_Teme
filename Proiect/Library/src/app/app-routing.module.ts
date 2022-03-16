@@ -6,7 +6,7 @@ import { HomePageComponent } from './home/home-page/home-page.component';
 
 const routes: Routes =[
   { path: "", component: HomePageComponent, pathMatch:"full" },
-  { path: "app-list-view", component: ListViewComponent},
+  { path: "app-list-view/:type", component: ListViewComponent},
   { path: "app-add-author", component: AddAuthorComponent},
   { path: '**', redirectTo: ''}
 ];

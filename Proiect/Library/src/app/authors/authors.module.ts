@@ -12,20 +12,20 @@ import { AddAuthorComponent } from './add-author/add-author.component';
 
 @NgModule({
   declarations: [
-    ListViewComponent,
     DetailViewComponent,
     AuthorComponent,
     AddAuthorComponent,
+    ListViewComponent
   ],
   imports: [
     CommonModule,
     ShareModuleModule,
   ],
   exports: [
-    ListViewComponent,
     DetailViewComponent,
     AuthorComponent,
-    AddAuthorComponent
+    AddAuthorComponent,
+    ListViewComponent
   ]
 })
 export class AuthorsModule { }

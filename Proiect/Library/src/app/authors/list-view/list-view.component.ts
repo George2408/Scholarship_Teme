@@ -1,6 +1,8 @@
 import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Author } from 'src/app/interfaces/author';
+import { Books } from 'src/app/interfaces/books';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
@@ -9,14 +11,30 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./list-view.component.scss'],
 })
 export class ListViewComponent implements OnInit {
-
   Authors: Author[];
-  displayedColumns: string[] = ['image', 'name', 'dateOfBirth'];
+  Books: Books[];
+  displayedColumns: string[];
+  type: string;
 
-  constructor(private _service: DataService) {}
+  constructor(
+    private _service: DataService,
+    private _Activatedroute: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
+    this._Activatedroute.params.subscribe((params) => {
+      this.type = params['type'];
+    });
 
-    this.Authors = this._service.getAuthorsData();
+    if (this.type == 'Author')
+    {
+      this.Authors = this._service.getAuthorsData();
+      this.displayedColumns = ['image', 'name', 'dateOfBirth'];
+    }
+    else if (this.type == 'Book')
+    {
+      this.Books = this._service.getBooksData();
+      this.displayedColumns = ['image', 'title', 'author', 'dateOfPublication'];
+    }
   }
 }

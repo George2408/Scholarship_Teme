@@ -2,27 +2,68 @@
   <div class="navBarContainer">
     <app-nav-bar></app-nav-bar>
   </div>
-  <div class="listViewContainer">
-    <table mat-table [dataSource]="Authors" class="mat-elevation-z8, table">
-      <ng-container matColumnDef="image" >
+  <div class="listViewContainer" *ngIf= "Authors">
+      <table mat-table [dataSource]="Authors" class="mat-elevation-z8, table">
+        <ng-container matColumnDef="image">
+          <th mat-header-cell *matHeaderCellDef class="imageDiv">Image</th>
+          <td mat-cell *matCellDef="let element" class="imageSize">
+            <img src="{{ element.image }}" alt="" />
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef>Name</th>
+          <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="dateOfBirth">
+          <th mat-header-cell *matHeaderCellDef>Date of Birth</th>
+          <td mat-cell *matCellDef="let element">
+            {{ element.dateOfBirth | date: "longDate" }}
+          </td>
+        </ng-container>
+
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+  </div>
+
+  <div class="listViewContainer" *ngIf="Books">
+    <table mat-table [dataSource]="Books" class="mat-elevation-z8, table">
+      <ng-container matColumnDef="image">
         <th mat-header-cell *matHeaderCellDef class="imageDiv">Image</th>
         <td mat-cell *matCellDef="let element" class="imageSize">
-           <img src="{{element.image}}" alt="">
+          <img src="{{ element.image }}" alt="" />
         </td>
       </ng-container>
 
-      <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef>Name</th>
-        <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+      <ng-container matColumnDef="title" >
+        <th mat-header-cell *matHeaderCellDef class="containerDisplay">Title</th>
+        <td mat-cell *matCellDef="let element" class="containerDisplay">{{ element.title }}</td>
       </ng-container>
 
-      <ng-container matColumnDef="dateOfBirth">
-        <th mat-header-cell *matHeaderCellDef>Date of Birth</th>
-        <td mat-cell *matCellDef="let element">{{ element.dateOfBirth | date:'longDate'}}</td>
+      <ng-container matColumnDef="author">
+        <th mat-header-cell *matHeaderCellDef class="containerDisplay">Author</th>
+        <td mat-cell *matCellDef="let element" class="containerDisplay">{{ element.author }}</td>
       </ng-container>
 
-      <tr mat-header-row *matHeaderRowDef="displayedColumns" ></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns" ></tr>
+      <!-- <ng-container matColumnDef="dateofPublication">
+        <th mat-header-cell *matHeaderCellDef>Date of Publication</th>
+        <td mat-cell *matCellDef="let element">
+          {{ element.dateOfPublication }}
+        </td>
+      </ng-container> -->
+
+      <ng-container matColumnDef="dateOfPublication">
+        <th mat-header-cell *matHeaderCellDef>dateOfPublication</th>
+        <td mat-cell *matCellDef="let element">{{ element.dateOfPublication | date:"longDate" }}</td>
+      </ng-container>
+
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
     </table>
   </div>
 </div>
