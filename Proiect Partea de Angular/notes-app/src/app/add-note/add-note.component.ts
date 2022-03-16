@@ -29,6 +29,6 @@ export class AddNoteComponent implements OnInit {
       categoryId: this.category.value,
     };
     // this._service.addNote(note)
-    this._service.updateNote(note).subscribe();
+    this._service.addNote(note).subscribe();
   }
 }
