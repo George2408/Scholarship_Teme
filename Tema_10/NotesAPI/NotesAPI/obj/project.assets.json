@@ -213,11 +213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\trasc\\Desktop\\Scholarship\\Partea .NET\\NotesAPI\\NotesAPI\\NotesAPI.csproj",
+      "projectUniqueName": "C:\\Users\\trasc\\Documents\\GitHub\\Scholarship_Teme\\Tema_10\\NotesAPI\\NotesAPI\\NotesAPI.csproj",
       "projectName": "NotesAPI",
-      "projectPath": "C:\\Users\\trasc\\Desktop\\Scholarship\\Partea .NET\\NotesAPI\\NotesAPI\\NotesAPI.csproj",
+      "projectPath": "C:\\Users\\trasc\\Documents\\GitHub\\Scholarship_Teme\\Tema_10\\NotesAPI\\NotesAPI\\NotesAPI.csproj",
       "packagesPath": "C:\\Users\\trasc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\trasc\\Desktop\\Scholarship\\Partea .NET\\NotesAPI\\NotesAPI\\obj\\",
+      "outputPath": "C:\\Users\\trasc\\Documents\\GitHub\\Scholarship_Teme\\Tema_10\\NotesAPI\\NotesAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\trasc\\AppData\\Roaming\\NuGet\\NuGet.Config",
