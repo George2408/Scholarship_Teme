@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 
 namespace NotesAPI.Controllers
@@ -30,9 +31,11 @@ namespace NotesAPI.Controllers
         /// </summary>
         /// <returns></returns>
 
-        /// <response code="201">Wheather forcast create succesfully</response>
+        /// <response code="200">Wheather forcast create succesfully</response>
 
         [HttpGet]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();

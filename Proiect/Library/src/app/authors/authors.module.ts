@@ -13,7 +13,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 @NgModule({
   declarations: [
     AddAuthorComponent,
-    ListViewComponent
+    ListViewComponent,
   ],
   imports: [
     CommonModule,

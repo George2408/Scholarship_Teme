@@ -15,8 +15,7 @@
             Get all wheather forecast
             </summary>
             <returns></returns>
-            <response code="201">Wheather forcast create succesfully</response>
-            <response code="401">Wheather forcast create succesfully</response>
+            <response code="200">Wheather forcast create succesfully</response>
         </member>
     </members>
 </doc>

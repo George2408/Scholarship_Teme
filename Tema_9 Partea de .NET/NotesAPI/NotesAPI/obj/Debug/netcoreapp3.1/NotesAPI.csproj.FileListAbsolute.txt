@@ -25,3 +25,30 @@ C:\Users\trasc\Desktop\Scholarship\Partea .NET\NotesAPI\NotesAPI\obj\Debug\netco
 C:\Users\trasc\Desktop\Scholarship\Partea .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\NotesAPI.xml
 C:\Users\trasc\Desktop\Scholarship\Partea .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\NotesAPI.pdb
 C:\Users\trasc\Desktop\Scholarship\Partea .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\NotesAPI.genruntimeconfig.cache
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\bin\Debug\netcoreapp3.1\NotesAPI.exe
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\bin\Debug\netcoreapp3.1\NotesAPI.deps.json
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\bin\Debug\netcoreapp3.1\NotesAPI.runtimeconfig.json
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\bin\Debug\netcoreapp3.1\NotesAPI.runtimeconfig.dev.json
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\bin\Debug\netcoreapp3.1\NotesAPI.dll
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\bin\Debug\netcoreapp3.1\NotesAPI.pdb
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\bin\Debug\netcoreapp3.1\NotesAPI.xml
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\NotesAPI.csproj.AssemblyReference.cache
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\NotesAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\NotesAPI.AssemblyInfoInputs.cache
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\NotesAPI.AssemblyInfo.cs
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\NotesAPI.csproj.CoreCompileInputs.cache
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\NotesAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\NotesAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\staticwebassets\NotesAPI.StaticWebAssets.Manifest.cache
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\NotesAPI.RazorTargetAssemblyInfo.cache
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\NotesAPI.csproj.CopyComplete
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\NotesAPI.dll
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\NotesAPI.xml
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\NotesAPI.pdb
+C:\Users\trasc\Documents\GitHub\Scholarship_Teme\Tema_9 Partea de .NET\NotesAPI\NotesAPI\obj\Debug\netcoreapp3.1\NotesAPI.genruntimeconfig.cache
