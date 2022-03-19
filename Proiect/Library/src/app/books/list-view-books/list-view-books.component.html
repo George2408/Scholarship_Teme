@@ -1,0 +1,53 @@
+<div class="mainContainer">
+  <div class="navBarContainer">
+    <app-nav-bar></app-nav-bar>
+  </div>
+  <div class="buttonAdd">
+    <button
+      mat-raised-button
+      [routerLink]="'/add-book'"
+      routerLinkActive="active"
+    >
+      Add a book
+    </button>
+  </div>
+
+  <div class="listViewContainer">
+    <table mat-table [dataSource]="Books" class="mat-elevation-z8, table">
+      <ng-container matColumnDef="image">
+        <th mat-header-cell *matHeaderCellDef class="imageDiv">Image</th>
+        <td mat-cell *matCellDef="let element" class="imageSize">
+          <img src="{{ element.image }}" alt="" routerLink="/detail-view" />
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef class="containerDisplay">
+          Title
+        </th>
+        <td mat-cell *matCellDef="let element" class="containerDisplay">
+          {{ element.title }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="author">
+        <th mat-header-cell *matHeaderCellDef class="containerDisplay">
+          Author
+        </th>
+        <td mat-cell *matCellDef="let element" class="containerDisplay">
+          {{ element.author }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="dateOfPublication">
+        <th mat-header-cell *matHeaderCellDef>dateOfPublication</th>
+        <td mat-cell *matCellDef="let element">
+          {{ element.dateOfPublication | date: "longDate" }}
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+</div>

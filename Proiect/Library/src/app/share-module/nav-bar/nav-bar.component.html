@@ -1,11 +1,22 @@
-
-<mat-toolbar>
+<mat-toolbar class="menu-list">
   <div class="bar">
-    <button mat-raised-button color="primary" routerLink="" class="button">HomePage</button>
-    <button mat-raised-button color="primary" routerLink="app-list-view/Author" class="button">
+    <button mat-raised-button color="primary" [routerLink]="''" class="button">
+      HomePage
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      [routerLink]="'/list-view-authors'"
+      class="button"
+    >
       Authors List
     </button>
-    <button mat-raised-button color="primary" routerLink="app-list-view/Book" class="button">
+    <button
+      mat-raised-button
+      color="primary"
+      [routerLink]="'/list-view-books'"
+      class="button"
+    >
       Books List
     </button>
   </div>

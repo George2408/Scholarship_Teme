@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { AuthorsModule } from '../authors/authors.module';
 import { Author } from '../interfaces/author';
 import { Books } from '../interfaces/books';
 
@@ -88,9 +89,26 @@ export class DataService {
     },
   ];
 
+
   getAuthorsData() {
     return this.authors;
   }
+
+  getAuthorById(id: string) {
+
+    // var obj = this.authors.filter(function (node) {
+    //   return node.id == id;
+    // });
+
+    // return obj;
+
+    return this.authors.find(x => x.id === id);
+  }
+
+  getBooksByAuthor(name:string){
+    return this.books.filter( book => book.author.toLowerCase() == name.toLowerCase() )
+  }
+
   addAuthor(newAuthor: Author) {
     newAuthor.id = this.authors[this.authors.length - 1].id;
     this.authors.push(newAuthor);

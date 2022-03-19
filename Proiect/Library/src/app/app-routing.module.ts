@@ -1,17 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddAuthorComponent } from './authors/add-author/add-author.component';
-import { ListViewComponent } from './share-module/list-view/list-view.component';
+// import { ListViewComponent } from './share-module/list-view/list-view.component';
 import { HomePageComponent } from './home/home-page/home-page.component';
 import { AddBookComponent } from './books/add-book/add-book.component';
-import { DetailViewComponent } from './share-module/detail-view/detail-view.component';
+import { ListViewAuthorsComponent } from './authors/list-view-authors/list-view-authors.component';
+import { ListViewBooksComponent } from './books/list-view-books/list-view-books.component';
+import { DetailBookComponent } from './books/detail-book/detail-book.component';
+import { DetailAuthorComponent } from './authors/detail-author/detail-author.component';
 
 const routes: Routes =[
   { path: "", component: HomePageComponent, pathMatch:"full" },
-  { path: "app-list-view/:type", component: ListViewComponent},
-  { path: "app-add-author", component: AddAuthorComponent},
-  { path: "app-add-book", component: AddBookComponent},
-  { path: "app-detail-view", component: DetailViewComponent},
+  // { path: "app-list-view/:type", component: ListViewComponent},
+  { path: "list-view-authors", component: ListViewAuthorsComponent},
+  { path: "list-view-books", component: ListViewBooksComponent},
+  { path: "add-author", component: AddAuthorComponent},
+  { path: "add-book", component: AddBookComponent},
+  { path: "detail-author", component:DetailAuthorComponent },
+  { path: "detail-book", component:DetailBookComponent },
   { path: '**', redirectTo: ''}
 ];
 

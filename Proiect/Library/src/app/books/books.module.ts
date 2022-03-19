@@ -6,6 +6,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 
 import { BookComponent } from './book/book.component';
 import { AddBookComponent } from './add-book/add-book.component';
+import { ListViewBooksComponent } from './list-view-books/list-view-books.component';
+import { DetailBookComponent } from './detail-book/detail-book.component';
 
 
 
@@ -14,6 +16,8 @@ import { AddBookComponent } from './add-book/add-book.component';
   declarations: [
     BookComponent,
     AddBookComponent,
+    ListViewBooksComponent,
+    DetailBookComponent,
   ],
   imports: [
     CommonModule,
@@ -25,7 +29,7 @@ import { AddBookComponent } from './add-book/add-book.component';
     BookComponent,
     AddBookComponent,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
   ]
 })
 export class BooksModule { }
