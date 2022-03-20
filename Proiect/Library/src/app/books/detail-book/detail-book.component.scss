@@ -1,0 +1,74 @@
+.imageSize {
+  height: 25em;
+  width: 33em;
+  margin-top: 10em;
+  margin-left: 7.5em;
+  display: block;
+  justify-content: center;
+}
+label {
+  margin-bottom: 1.5em;
+  display: flex;
+  justify-content: center;
+  width: 16em;
+  font-size: 1.25em;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.mainChild {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+.descriptionContainer {
+  width: 33em;
+  margin-top: 10em;
+  margin-left: 7.5em;
+  display: block;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.description {
+  width: 100%;
+  margin-left: -5em;
+  margin-top: 5.5em;
+}
+
+.anotherDetails {
+  width: 33em;
+  margin-top: 10em;
+  margin-left: 7em;
+  display: block;
+  justify-content: center;
+}
+//////
+
+.listContainer {
+  margin-left: -6.5em;
+  width: 100%;
+}
+.listViewContainer {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 1 1 auto;
+  height: 35px;
+  width: 115%;
+}
+.imageList {
+  width: 20em;
+}
+.imageListSize {
+  height: 15em;
+  width: 17em;
+  margin-left: -10px;
+  display: flex;
+  justify-content: center;
+}

@@ -67,7 +67,7 @@ export class DataService {
       image: '/assets/Books/luceafarul.jpg',
       dateOfPublication: new Date(1883, 1, 1),
       description:
-        "Written in the first person, SS-General is based on the adventures of a group of German penal battalion soldiers in the Battle of Stalingrad. The book describes their escape from the Stalingrad siege under the leadership of a fanatical Brigadeführer of the Waffen-SS. Like all Sven Hassel's books it contains graphic descriptions of war's brutality, as well as elements of military humor.",
+        "Luceafărul (originally spelled Luceafĕrul pronunciation: [lutʃe̯afərul]; variously rendered as The Morning Star, The Evening Star, The Vesper, The Daystar, or Lucifer) is a narrative poem by Romanian author Mihai Eminescu. It was first published in 1883, out of Vienna, by Romanian expatriates in Austria-Hungary. It is generally considered Eminescu's masterpiece, one of the greatest accomplishments in Romanian literature, and one of the last milestones in Europe's romantic poetry.",
     },
     {
       id: '4',
@@ -83,30 +83,30 @@ export class DataService {
       author: 'William Shakespeare',
       title: 'Romeo and Juliet',
       image: '/assets/Books/romeoAndJuliet.jpg',
-      dateOfPublication: new Date(1, 1, 1597),
+      dateOfPublication: new Date(1597, 1, 1),
       description:
         "Romeo and Juliet is a tragedy written by William Shakespeare early in his career about two young Italian star-crossed lovers whose deaths ultimately reconcile their feuding families. It was among Shakespeare's most popular plays during his lifetime and, along with Hamlet, is one of his most frequently performed plays. Today, the title characters are regarded as archetypal young lovers.",
     },
   ];
-
 
   getAuthorsData() {
     return this.authors;
   }
 
   getAuthorById(id: string) {
-
     // var obj = this.authors.filter(function (node) {
     //   return node.id == id;
     // });
 
     // return obj;
 
-    return this.authors.find(x => x.id === id);
+    return this.authors.find((x) => x.id === id);
   }
 
-  getBooksByAuthor(name:string){
-    return this.books.filter( book => book.author.toLowerCase() == name.toLowerCase() )
+  getBooksByAuthor(name: string) {
+    return this.books.filter(
+      (book) => book.author.toLowerCase() == name.toLowerCase()
+    );
   }
 
   addAuthor(newAuthor: Author) {

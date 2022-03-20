@@ -1,8 +1,24 @@
 <div class="mainContainer">
   <app-nav-bar></app-nav-bar>
 
-  <div class="imageTitle"></div>
-  <div class="description"></div>
+  <div class="mainChild">
+    <div class="imageSize">
+      <label for="#image">{{ book.title }}</label>
+      <img src="{{ book.image }}" #image />
+    </div>
 
+    <div class="descriptionContainer">
+      <p class="description">
+        {{ book.description }}
+      </p>
+      <p>
+        Date of Publication: {{ book.dateOfPublication | date: "longDate" }}
+      </p>
+    </div>
+
+    <div class="anotherDetails">
+      <label for="#imageA">Author: {{book.author}}</label>
+      <!-- <img src="{{ book }}" #imageA /> -->
+    </div>
+  </div>
 </div>
-
