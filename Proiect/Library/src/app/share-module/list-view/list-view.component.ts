@@ -11,8 +11,8 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./list-view.component.scss'],
 })
 export class ListViewComponent implements OnInit {
-  Authors: Author[];
-  Books: Books[];
+  authors: Author[];
+  books: Books[];
   displayedColumns: string[];
   type: string;
 
@@ -28,12 +28,12 @@ export class ListViewComponent implements OnInit {
 
     if (this.type == 'Author')
     {
-      this.Authors = this._service.getAuthorsData();
+      this._service.getAuthorsData().subscribe( (authors:Author[]) => this.authors = authors);
       this.displayedColumns = ['image', 'name', 'dateOfBirth'];
     }
     else if (this.type == 'Book')
     {
-      this.Books = this._service.getBooksData();
+      this._service.getBooksData().subscribe((books:Books[]) => this.books = books);
       this.displayedColumns = ['image', 'title', 'author', 'dateOfPublication'];
     }
   }

@@ -1,7 +1,7 @@
 import { Data } from '@angular/router';
 
 export interface Author {
-  id: string;
+  authorId: string;
   name: string;
   dateOfBirth: Date;
   description: string;

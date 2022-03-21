@@ -9,13 +9,13 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class ListViewBooksComponent implements OnInit {
 
-  Books: Books[];
+  books: Books[];
   displayedColumns: string[];
 
   constructor(private _service:DataService ) { }
 
   ngOnInit(): void {
-    this.Books = this._service.getBooksData();
+    this._service.getBooksData().subscribe((books:Books[]) => this.books = books);
     this.displayedColumns = ['image', 'title', 'author', 'dateOfPublication'];
   }
 

@@ -9,13 +9,13 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class ListViewAuthorsComponent implements OnInit {
 
-  Authors: Author[];
+  authors: Author[];
   displayedColumns: string[];
 
   constructor(private _service: DataService) { }
 
   ngOnInit(): void {
-    this.Authors = this._service.getAuthorsData();
+    this._service.getAuthorsData().subscribe( (authors:Author[]) => this.authors = authors);
     this.displayedColumns = ['image', 'name', 'dateOfBirth'];
   }
 

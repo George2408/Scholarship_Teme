@@ -13,7 +13,7 @@ import { DataService } from 'src/app/services/data.service';
 export class DetailAuthorComponent implements OnInit {
 
   author: Author= {
-    id: '1',
+    authorId: '1',
     name: 'William Shakespeare',
     image: '/assets/Authors/Shakespear.jpg',
     dateOfBirth: new Date(1564, 4, 23),
@@ -33,7 +33,8 @@ export class DetailAuthorComponent implements OnInit {
     // this.author = this._service.getAuthorById(this.id);
   // });
 
-    this.books = this._service.getBooksByAuthor(this.author.name)
+    // this.books = this._service.getBooksByAuthor(this.author.name)
+    this._service.getBooksByAuthor(this.author.name).subscribe( (books:Books[]) => this.books = books)
 
 }
 }

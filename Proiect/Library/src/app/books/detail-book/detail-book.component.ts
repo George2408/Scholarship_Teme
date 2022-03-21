@@ -10,7 +10,7 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class DetailBookComponent implements OnInit {
   book: Books = {
-    id: '1',
+    bookId: '1',
     author: 'Sven Hassel',
     title: 'Legion of the Damned',
     image: '/assets/Books/legion.jpg',
@@ -23,6 +23,6 @@ export class DetailBookComponent implements OnInit {
   constructor(private _service: DataService) {}
 
   ngOnInit(): void {
-    
+
   }
 }

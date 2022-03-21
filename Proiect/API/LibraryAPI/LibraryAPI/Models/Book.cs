@@ -9,6 +9,7 @@ namespace LibraryAPI.Models
         public string Title { get; set; }
         public DateTime DateOfPublication { get; set; }
         public string Description { get; set; }
+        public string Image { get; set; }
 
     }
 }

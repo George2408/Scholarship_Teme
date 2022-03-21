@@ -8,7 +8,7 @@ import { AuthorsModule } from './authors/authors.module';
 import { BooksModule } from './books/books.module';
 import { ShareModuleModule } from './share-module/share-module.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BooksModule,
     ShareModuleModule,
     BrowserAnimationsModule,
-
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
