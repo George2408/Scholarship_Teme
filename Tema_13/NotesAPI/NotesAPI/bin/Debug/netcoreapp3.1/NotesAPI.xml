@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NotesAPI</name>
+    </assembly>
+    <members>
+        <member name="F:NotesAPI.Controllers.NotesController._noteCollectionService">
+            <summary>
+            Get all notes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NotesAPI.Controllers.WeatherForecastController.Get">
+            <summary>
+            Get all wheather forecast
+            </summary>
+            <returns></returns>
+            <response code="201">Wheather forcast create succesfully</response>
+        </member>
+    </members>
+</doc>

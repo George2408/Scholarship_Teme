@@ -31,16 +31,16 @@ export class DetailAuthorComponent implements OnInit {
 
   ngOnInit(): void {
     this._Activatedroute.params.subscribe((params) => {
-    this.id = params['id'];
+      this.id = params['id'];
       // this.author = this._service.getAuthorById(this.id);
     });
 
     // this.books = this._service.getBooksByAuthor(this.author.name)
-    this._service
-      .getAuthorById(this.id)
-      .subscribe((author: Author) => (this.author = author));
-    this._service
-      .getBooksByAuthor(this.author.name)
-      .subscribe((books: Books[]) => (this.books = books));
+    this._service.getAuthorById(this.id).subscribe((author: Author) => {
+      this.author = author;
+      this._service
+        .getBooksByAuthor(this.author.name)
+        .subscribe((books: Books[]) => {this.books = books});
+    });
   }
 }

@@ -40,19 +40,19 @@ namespace LibraryAPI.Controllers
             return Ok(book);
         }
 
-        [HttpGet("Author/{authorName}")]
-        public IActionResult GetBookByAuthor(string authorName)
-        {
-            var book = new List<Book>();
-            foreach (var e in _books)
-            {
-                if (e.Author.ToString().ToLower() == authorName.ToLower())
-                {
-                    book.Add(e);
-                }
-            }
-            return Ok(book);
-        }
+        //[HttpGet("Author/{authorName}")]
+        //public IActionResult GetBookByAuthor(string authorName)
+        //{
+        //    var book = new List<Book>();
+        //    foreach (var e in _books)
+        //    {
+        //        if (e.Author.ToString().ToLower() == authorName.ToLower())
+        //        {
+        //            book.Add(e);
+        //        }
+        //    }
+        //    return Ok(book);
+        //}
 
         [HttpPost]
         public IActionResult AddBook([FromBody] Book book )

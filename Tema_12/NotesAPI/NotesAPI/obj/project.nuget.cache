@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5qfM2NwsoiXJlFQqYgpWJJ/ogmYtFDdVqrUGoNpOvp/ejUzvhjc/oiZUXL8iXeoG+ZzazWarwZpXvks28f+QOg==",
+  "dgSpecHash": "bep6ALE28efgTe3mSEieW3wubFZk2DcK07PJJw+J2JBpkiQvbLLARk0kRuMDDB5R0oB/i9RcCZAf7SHyNz6Uqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\trasc\\Desktop\\Scholarship\\Partea .NET\\NotesAPI\\NotesAPI\\NotesAPI.csproj",
+  "projectFilePath": "C:\\Users\\trasc\\Documents\\GitHub\\Scholarship_Teme\\Tema_12\\NotesAPI\\NotesAPI\\NotesAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\trasc\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\trasc\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

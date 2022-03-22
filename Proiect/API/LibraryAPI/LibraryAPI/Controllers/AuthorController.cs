@@ -19,7 +19,7 @@ namespace LibraryAPI.Controllers
             new Author { Image =" /assets/Authors/Shakespear.jpg", AuthorId = new Guid("00000000-0000-0000-0000-000000000004"), Name = "William Shakespeare", DateOfBirth = new DateTime(1597, 1, 1), Description = "William Shakespeare, Shakespeare also spelled Shakspere, byname Bard of Avon or Swan of Avon, (baptized April 26, 1564, Stratford-upon-Avon, Warwickshire, England—died April 23, 1616, Stratford-upon-Avon), English poet, dramatist, and actor often called the English national poet and considered by many to be the greatest dramatist of all time." },
         };
 
-
+       
         [HttpGet]
         public IActionResult GetAuthors()
         {
@@ -29,18 +29,18 @@ namespace LibraryAPI.Controllers
         [HttpGet("{id}")]
         public IActionResult GetAuthorById(Guid id)
         {
-            var aux = new Author(); 
+            var author = new Author(); 
 
             foreach(var e in _authors)
             {
                 if(e.AuthorId == id)
                 {
-                    aux = e;
+                    author = e;
                     break;
                 }
             }
 
-            return Ok(aux);
+            return Ok(author);
         }
       
         [HttpPost]
