@@ -22,12 +22,12 @@ export class AddAuthorComponent implements OnInit {
 
   clickAdd(){
     var author: Author = {
-      authorId : '1',
+      authorId : '00000000-0000-0000-0000-000000000000',
       name : this.name.value,
       description : this.description.value,
       image : "/assets/Authors/Sven.jpg",
       dateOfBirth: this.dateOfBirth.value,
     };
-    this._service.addAuthor(author);
+    this._service.addAuthor(author).subscribe();
 }
 }

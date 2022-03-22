@@ -19,6 +19,8 @@ export class AddBookComponent implements OnInit {
 
   authors: Author[];
 
+  
+
   constructor(private _service: DataService) { }
 
   ngOnInit(): void {
@@ -27,14 +29,14 @@ export class AddBookComponent implements OnInit {
 
   clickAdd(){
     var book: Books = {
-      bookId:'1',
+      bookId:'00000000-0000-0000-0000-000000000000',
       author : this.author.value,
       title : this.title.value,
       dateOfPublication: this.dateOfPublication.value,
       description : this.description.value,
       image: '/assets/Books/romeoAndJuliet.jpg',
     };
-    this._service.addBook(book);
+    this._service.addBook(book).subscribe();
 
 }
 }

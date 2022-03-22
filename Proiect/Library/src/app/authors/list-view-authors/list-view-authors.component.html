@@ -19,7 +19,8 @@
 
       <ng-container matColumnDef="name">
         <th mat-header-cell *matHeaderCellDef>Name</th>
-        <td mat-cell *matCellDef="let element" [routerLink]="'/detail-view'">
+        <!-- <td mat-cell *matCellDef="let element" [routerLink]="'/detail-view'"> -->
+        <td mat-cell *matCellDef="let element" (click)="detailView(element.authorId)">
           {{ element.name }}
         </td>
       </ng-container>

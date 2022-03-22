@@ -43,13 +43,12 @@ namespace LibraryAPI.Controllers
         [HttpGet("Author/{authorName}")]
         public IActionResult GetBookByAuthor(string authorName)
         {
-            var book = new Book();
+            var book = new List<Book>();
             foreach (var e in _books)
             {
                 if (e.Author.ToString().ToLower() == authorName.ToLower())
                 {
-                    book = e;
-                    break;
+                    book.Add(e);
                 }
             }
             return Ok(book);

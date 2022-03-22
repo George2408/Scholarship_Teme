@@ -24,7 +24,7 @@
         <input
           matInput
           [matDatepicker]="picker"
-          [value]="dateOfBirth.value"
+          [formControl]="dateOfBirth"
           required
         />
         <mat-datepicker #picker></mat-datepicker>

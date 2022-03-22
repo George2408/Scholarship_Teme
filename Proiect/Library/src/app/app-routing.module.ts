@@ -16,7 +16,7 @@ const routes: Routes =[
   { path: "list-view-books", component: ListViewBooksComponent},
   { path: "add-author", component: AddAuthorComponent},
   { path: "add-book", component: AddBookComponent},
-  { path: "detail-author", component:DetailAuthorComponent },
+  { path: "detail-author/:id", component:DetailAuthorComponent },
   { path: "detail-book", component:DetailBookComponent },
   { path: '**', redirectTo: ''}
 ];
