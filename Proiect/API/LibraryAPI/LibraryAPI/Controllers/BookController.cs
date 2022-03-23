@@ -29,12 +29,7 @@ namespace LibraryAPI.Controllers
             return Ok(_bookCollectionService.Get(id));
         }
 
-        [HttpGet("Author/{authorName}")]
-        public IActionResult GetBookByAuthor(string authorName)
-        {
-            return Ok(_bookCollectionService.GetBooksByAuthor(authorName));
-        }
-
+        
         [HttpPost]
         public IActionResult AddBook([FromBody] Book book )
         {

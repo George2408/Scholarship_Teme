@@ -37,7 +37,7 @@ namespace LibraryAPI.Services
                 }
             }
 
-            author.Books = _bookCollectionService.GetBooksByAuthor(author.Name);
+            author.Books = _bookCollectionService.GetBooksByAuthor(author.AuthorId);
 
             return author;
         }

@@ -113,8 +113,8 @@ export class DataService {
     return this.http.get<Books>(this.APIUrl + 'Book/' + `${id}`);
   }
 
-  getBooksByAuthor(name: string): Observable<Books[]> {
-    return this.http.get<Books[]>(this.APIUrl + '/Book/Author/' + name);
+  getBooksByAuthor(id: string): Observable<Books[]> {
+    return this.http.get<Books[]>(this.APIUrl + '/Book/Author/' + id);
   }
 
   addBook(newBook: Books) {

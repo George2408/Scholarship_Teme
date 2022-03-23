@@ -39,7 +39,7 @@ export class DetailAuthorComponent implements OnInit {
     this._service.getAuthorById(this.id).subscribe((author: Author) => {
       this.author = author;
       this._service
-        .getBooksByAuthor(this.author.name)
+        .getBooksByAuthor(this.author.authorId)
         .subscribe((books: Books[]) => {this.books = books});
     });
   }
