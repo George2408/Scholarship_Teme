@@ -6,6 +6,12 @@ namespace LibraryAPI.Services
 {
     public class AuthorCollectionService : IAuthorCollectionService
     {
+        IBookCollectionService _bookCollectionService;
+        public AuthorCollectionService(IBookCollectionService bookCollectionService)
+        {
+            _bookCollectionService = bookCollectionService;
+        }
+
         static List<Author> _authors = new List<Author>
         {
             new Author { Image ="/assets/Authors/Sven.jpg ", AuthorId = new Guid("00000000-0000-0000-0000-000000000001"), Name = "Sven Hassel",  DateOfBirth = new DateTime(1960, 1, 1), Description ="'Sven Hassel was the pen name of the Danish-born Børge Willy Redsted Pedersen (19 April 1917 ~ 21 September 2012)[ known primarily for his novels focusing on stories of German combatants during World War II. In Denmark he used the pen name Sven Hazel. Although he is arguably one of the bestselling Danish authors, possibly second only to Hans Christian Andersen" },
@@ -19,8 +25,7 @@ namespace LibraryAPI.Services
         }
         public Author Get(Guid id)
         {
-            IBookCollectionService _bookCollectionService;
-
+            
             var author = new Author();
 
             foreach (var e in _authors)
@@ -31,6 +36,9 @@ namespace LibraryAPI.Services
                     break;
                 }
             }
+
+            author.Books = _bookCollectionService.GetBooksByAuthor(author.Name);
+
             return author;
         }
         public bool Create(Author author)
