@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { Author } from 'src/app/interfaces/author';
+import { Books } from 'src/app/interfaces/books';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
@@ -13,12 +14,12 @@ export class AddAuthorComponent implements OnInit {
   name = new FormControl('');
   description = new FormControl('');
   dateOfBirth = new FormControl(new Date());
+  books : Books[];
 
   constructor(private _service: DataService) { }
 
   ngOnInit(): void {
   }
-
 
   clickAdd(){
     var author: Author = {
@@ -27,6 +28,7 @@ export class AddAuthorComponent implements OnInit {
       description : this.description.value,
       image : "/assets/Authors/Sven.jpg",
       dateOfBirth: this.dateOfBirth.value,
+      books : this.books,
     };
     this._service.addAuthor(author).subscribe();
 }

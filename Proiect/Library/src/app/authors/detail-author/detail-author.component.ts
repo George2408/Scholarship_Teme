@@ -20,7 +20,7 @@ export class DetailAuthorComponent implements OnInit {
   //     'William Shakespeare, Shakespeare also spelled Shakspere, byname Bard of Avon or Swan of Avon, (baptized April 26, 1564, Stratford-upon-Avon, Warwickshire, England—died April 23, 1616, Stratford-upon-Avon), English poet, dramatist, and actor often called the English national poet and considered by many to be the greatest dramatist of all time.',
   // };
   author: Author;
-  books: Books[];
+  books : Books[];
   displayedColumns = ['image', 'title', 'dateOfPublication'];
   id: string;
 
@@ -36,11 +36,9 @@ export class DetailAuthorComponent implements OnInit {
     });
 
     // this.books = this._service.getBooksByAuthor(this.author.name)
-    this._service.getAuthorById(this.id).subscribe((author: Author) => {
-      this.author = author;
-      this._service
-        .getBooksByAuthor(this.author.authorId)
-        .subscribe((books: Books[]) => {this.books = books});
-    });
+    this._service
+      .getAuthorById(this.id)
+      .subscribe((author: Author) => {(this.author = author), this.books = this.author.books});
+
   }
 }

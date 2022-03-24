@@ -1,4 +1,5 @@
 import { Data } from '@angular/router';
+import { Books } from './books';
 
 export interface Author {
   authorId: string;
@@ -6,4 +7,5 @@ export interface Author {
   dateOfBirth: Date;
   description: string;
   image: string;
+  books: Books[];
 }
