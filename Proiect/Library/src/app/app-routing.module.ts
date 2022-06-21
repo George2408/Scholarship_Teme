@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddAuthorComponent } from './authors/add-author/add-author.component';
-// import { ListViewComponent } from './share-module/list-view/list-view.component';
 import { HomePageComponent } from './home/home-page/home-page.component';
 import { AddBookComponent } from './books/add-book/add-book.component';
 import { ListViewAuthorsComponent } from './authors/list-view-authors/list-view-authors.component';
@@ -11,7 +10,6 @@ import { DetailAuthorComponent } from './authors/detail-author/detail-author.com
 
 const routes: Routes =[
   { path: "", component: HomePageComponent, pathMatch:"full" },
-  // { path: "app-list-view/:type", component: ListViewComponent},
   { path: "list-view-authors", component: ListViewAuthorsComponent},
   { path: "list-view-books", component: ListViewBooksComponent},
   { path: "add-author", component: AddAuthorComponent},

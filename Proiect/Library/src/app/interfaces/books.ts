@@ -1,10 +1,8 @@
-import { Data } from "@angular/router";
-
 export interface Books {
-  bookId:string;
-  author:string;
-  title:string;
-  image:string;
+  bookId: string;
+  author: string;
+  title: string;
+  image: string;
   dateOfPublication: Date;
-  description:string;
+  description: string;
 }
